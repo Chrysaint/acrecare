@@ -1,0 +1,7 @@
+{
+    "require": {
+        "symfony/routing": "5.4",
+        "symfony/http-foundation": "5.*",
+        "phpmailer/phpmailer": "*"
+    }
+}
