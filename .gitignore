@@ -2,7 +2,6 @@
 
 services/users_api
 services/chat_api
-services/frontend
 
 .idea
 

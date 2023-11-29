@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Средство по уходу за обувью - Acrecare">
+    <meta name="description" content="Наш продукт Acrecare - это средства, которые помогают сохранить вашу обувь в идеальном состоянии и продлевают ее жизнь. Мы стремимся сделать уход за кроссовками простым, доступным и удобным для каждогопокупателя.">
+    <meta name="keywords" content="Уход, обувь, уход за обувью, средства для чистки обуви, acrecare, чистота обуви, ботинки, чистая обувь, средства для обуви, подошва, чистота подошвы.">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/logo2.svg" type="image/x-icon">
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <title>acre</title>
+</head>
+<body>
+    <header class="header flex container">
+        <img src="./assets/img/logo.svg" alt="logo1">
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__item-link" href="#about-section">О нас</a></li>
+                <li class="header__item"><a class="header__item-link" href="#products-section">Каталог</a></li>
+                <li class="header__item"><a class="header__item-link" href="#cleaning-section">Сникерклининг</a></li>
+                <li class="header__item"><a class="header__item-link" href="#buy-section">Купить оптом</a></li>
+            </ul>
+        </nav>
+        <div class="header__socials">
+            <a href="https://vk.com/acrecare" class="header__socials-link" target="_blank">
+                <svg class="header__socials-logo" id="vk" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M46.4917 3.50833C42.9833 0 37.3354 0 26.0417 0H23.9583C12.6646 0 7.01667 0 3.50833 3.50833C0 7.01667 0 12.6646 0 23.9583V26.0417C0 37.3354 0 42.9812 3.50833 46.4917C7.01667 50.0021 12.6646 50 23.9583 50H26.0417C37.3354 50 42.9812 50 46.4917 46.4917C50 42.9833 50 37.3354 50 26.0417V23.9583C50 12.6646 50 7.01667 46.4917 3.50833ZM40.6312 35.4167H36.9854C35.5958 35.4167 35.1875 34.3083 32.7146 31.8354C30.55 29.75 29.6229 29.4792 29.0833 29.4792C28.3479 29.4792 28.1292 29.6875 28.1292 30.7292V33.9979C28.1292 34.8937 27.8437 35.4167 25.525 35.4167C21.6625 35.4167 17.4167 33.0708 14.4021 28.7458C9.88125 22.4104 8.64583 17.6208 8.64583 16.6562C8.64583 16.1146 8.85417 15.625 9.89583 15.625H13.5437C14.475 15.625 14.825 16.0333 15.175 17.0417C16.9583 22.2354 19.9667 26.775 21.2021 26.775C21.6646 26.775 21.8771 26.5604 21.8771 25.3854V20.0167C21.7417 17.5458 20.4271 17.3417 20.4271 16.4625C20.4271 16.0562 20.775 15.625 21.3542 15.625H27.0854C27.8583 15.625 28.1271 16.0375 28.1271 16.9646V24.1875C28.1271 24.9583 28.4625 25.2292 28.6937 25.2292C29.1583 25.2292 29.5437 24.9583 30.3937 24.1083C33.0208 21.1729 34.875 16.6542 34.875 16.6542C35.1083 16.1125 35.5333 15.6229 36.4625 15.6229H40.1083C41.2104 15.6229 41.4437 16.1896 41.2104 16.9625C40.7458 19.0875 36.3042 25.3437 36.3042 25.3437C35.9167 25.9625 35.7625 26.2708 36.3042 26.9667C36.6917 27.5083 37.9646 28.5896 38.8146 29.5937C40.3812 31.3562 41.5625 32.8417 41.8917 33.8667C42.1958 34.8958 41.6729 35.4167 40.6312 35.4167Z" fill="#314862"/>
+                </svg>     
+            </a>
+            <a href="https://t.me/acrecare" class="header__socials-link" target="_blank">
+                <svg class="header__socials-logo" id="telegram" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25 0C11.1937 0 0 11.1937 0 25C0 38.8062 11.1937 50 25 50C38.8062 50 50 38.8062 50 25C50 11.1937 38.8062 0 25 0ZM36.5875 17.0021C36.2125 20.9542 34.5833 30.5479 33.7562 34.975C33.4062 36.85 32.7146 37.4771 32.0479 37.5375C30.5958 37.6708 29.4937 36.5771 28.0875 35.6562C25.8875 34.2146 24.6437 33.3167 22.5083 31.9083C20.0396 30.2812 21.6396 29.3875 23.0458 27.9271C23.4146 27.5437 29.8104 21.725 29.9354 21.1979C29.95 21.1313 29.9667 20.8854 29.8187 20.7563C29.6708 20.6271 29.4562 20.6708 29.3021 20.7062C29.0812 20.7563 25.5667 23.0792 18.7563 27.675C17.7583 28.3604 16.8542 28.6938 16.0438 28.6771C15.1521 28.6583 13.4354 28.1729 12.1583 27.7562C10.5938 27.2479 9.34792 26.9771 9.45625 26.1146C9.5125 25.6646 10.1313 25.2042 11.3146 24.7333C18.6021 21.5583 23.4625 19.4646 25.8937 18.4521C32.8375 15.5646 34.2792 15.0625 35.2208 15.0458C36.4 15.0292 36.6833 16.0021 36.5875 17.0021Z" fill="#314862"/>
+                </svg>  
+            </a>
+        </div>
+
+        <div data-state="closed" class="burger">
+            <div class="burger-line"></div>
+        </div>
+        <div class="black-out" data-state="closed"></div>
+        <nav class="burger-nav" data-state="closed">
+            <div class="burger-nav-wrapper">
+                <ul class="nav-grid-flow-list">
+                    <li class="nav-grid-flow-item"><a class="nav-grid-flow-link" href="#about-section">О нас</a></li>
+                    <li class="nav-grid-flow-item"><a class="nav-grid-flow-link" href="#products-section">Каталог</a></li>
+                    <li class="nav-grid-flow-item"><a class="nav-grid-flow-link" href="#cleaning-section">Сникерклининг</a></li>
+                    <li class="nav-grid-flow-item"><a class="nav-grid-flow-link" href="#buy-section">Купить оптом</a></li>
+                </ul>
+                <div class="burger-nav-socials">
+                    <a href="https://vk.com/acrecare" class="header__socials-link" target="_blank">
+                        <svg class="header__socials-logo" id="vk" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M46.4917 3.50833C42.9833 0 37.3354 0 26.0417 0H23.9583C12.6646 0 7.01667 0 3.50833 3.50833C0 7.01667 0 12.6646 0 23.9583V26.0417C0 37.3354 0 42.9812 3.50833 46.4917C7.01667 50.0021 12.6646 50 23.9583 50H26.0417C37.3354 50 42.9812 50 46.4917 46.4917C50 42.9833 50 37.3354 50 26.0417V23.9583C50 12.6646 50 7.01667 46.4917 3.50833ZM40.6312 35.4167H36.9854C35.5958 35.4167 35.1875 34.3083 32.7146 31.8354C30.55 29.75 29.6229 29.4792 29.0833 29.4792C28.3479 29.4792 28.1292 29.6875 28.1292 30.7292V33.9979C28.1292 34.8937 27.8437 35.4167 25.525 35.4167C21.6625 35.4167 17.4167 33.0708 14.4021 28.7458C9.88125 22.4104 8.64583 17.6208 8.64583 16.6562C8.64583 16.1146 8.85417 15.625 9.89583 15.625H13.5437C14.475 15.625 14.825 16.0333 15.175 17.0417C16.9583 22.2354 19.9667 26.775 21.2021 26.775C21.6646 26.775 21.8771 26.5604 21.8771 25.3854V20.0167C21.7417 17.5458 20.4271 17.3417 20.4271 16.4625C20.4271 16.0562 20.775 15.625 21.3542 15.625H27.0854C27.8583 15.625 28.1271 16.0375 28.1271 16.9646V24.1875C28.1271 24.9583 28.4625 25.2292 28.6937 25.2292C29.1583 25.2292 29.5437 24.9583 30.3937 24.1083C33.0208 21.1729 34.875 16.6542 34.875 16.6542C35.1083 16.1125 35.5333 15.6229 36.4625 15.6229H40.1083C41.2104 15.6229 41.4437 16.1896 41.2104 16.9625C40.7458 19.0875 36.3042 25.3437 36.3042 25.3437C35.9167 25.9625 35.7625 26.2708 36.3042 26.9667C36.6917 27.5083 37.9646 28.5896 38.8146 29.5937C40.3812 31.3562 41.5625 32.8417 41.8917 33.8667C42.1958 34.8958 41.6729 35.4167 40.6312 35.4167Z" fill="#314862"/>
+                        </svg>     
+                    </a>
+                    <a href="https://t.me/acrecare" class="header__socials-link" target="_blank">
+                        <svg class="header__socials-logo" id="telegram" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25 0C11.1937 0 0 11.1937 0 25C0 38.8062 11.1937 50 25 50C38.8062 50 50 38.8062 50 25C50 11.1937 38.8062 0 25 0ZM36.5875 17.0021C36.2125 20.9542 34.5833 30.5479 33.7562 34.975C33.4062 36.85 32.7146 37.4771 32.0479 37.5375C30.5958 37.6708 29.4937 36.5771 28.0875 35.6562C25.8875 34.2146 24.6437 33.3167 22.5083 31.9083C20.0396 30.2812 21.6396 29.3875 23.0458 27.9271C23.4146 27.5437 29.8104 21.725 29.9354 21.1979C29.95 21.1313 29.9667 20.8854 29.8187 20.7563C29.6708 20.6271 29.4562 20.6708 29.3021 20.7062C29.0812 20.7563 25.5667 23.0792 18.7563 27.675C17.7583 28.3604 16.8542 28.6938 16.0438 28.6771C15.1521 28.6583 13.4354 28.1729 12.1583 27.7562C10.5938 27.2479 9.34792 26.9771 9.45625 26.1146C9.5125 25.6646 10.1313 25.2042 11.3146 24.7333C18.6021 21.5583 23.4625 19.4646 25.8937 18.4521C32.8375 15.5646 34.2792 15.0625 35.2208 15.0458C36.4 15.0292 36.6833 16.0021 36.5875 17.0021Z" fill="#314862"/>
+                        </svg>  
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero flex container">
+            <div class="hero__text">
+                <h1 class="hero__title">
+                    <span class="hero__title-base">refresh your </span><span class="hero__title_accent accent" id="heroTitleAccent">kicks</span><span class="bar accent">|</span>
+                </h1>
+            </div>
+            <div class="hero__shoe">
+                <img src="./assets/img/hero.png" alt="sneaker" class="hero__img">
+            </div>
+        </section>
+        <section class="about container" id="about-section">
+            <div class="about__content">
+                <div class="col_wide">
+                    <h2 class="section__heading">О нас</h2>
+                    <h3 class="section__subheading">Доступность в лучшем виде!</h3>
+                    <p class="about__text">Наша продукты - это средства, которые помогают сохранить вашу обувь в идеальном состоянии и продлевают ее жизнь. Мы стремимся сделать уход за кроссовками простым, доступным и удобным для каждогопокупателя. </p>
+                </div>
+                <div class="about__kick">
+                    <button class="about__kick-switch about__kick-switch_bottom">
+                        <img src="./assets/img/about/kick-plus.svg" alt="plus-icon">
+                    </button>
+                    <button class="about__kick-switch about__kick-switch_middle">
+                        <img src="./assets/img/about/kick-plus.svg" alt="plus-icon">
+                    </button>
+                    <button class="about__kick-switch about__kick-switch_top">
+                        <img src="./assets/img/about/kick-plus.svg" alt="plus-icon">
+                    </button>
+                    <button class="about__kick-switch about__kick-switch_all">
+                        <img src="./assets/img/about/kick-plus.svg" alt="plus-icon">
+                    </button>
+                    <img class="about__kick-img about__kick-img_none about__kick-img_active" src="./assets/img/about/1.jpg" alt="">
+                    <img class="about__kick-img about__kick-img_bottom" src="./assets/img/about/2.jpg" alt="">
+                    <img class="about__kick-img about__kick-img_middle" src="./assets/img/about/3.jpg" alt="">
+                    <img class="about__kick-img about__kick-img_top" src="./assets/img/about/4.jpg" alt="">
+                    <img class="about__kick-img about__kick-img_all" src="./assets/img/about/5.jpg" alt="">
+                </div>
+            </div>
+            <div class="about__adventage">
+                <h3 class="about__adventage-heading section__subheading">Особенности</h3>
+                <div class="about__adventage-line flex">
+                    <article class="about__adventage-item col_wide">
+                        <div class="about__adventage-subheading">
+                            <img class="about__adventage-icon" src="./assets/img/about/time.svg" alt="clock-logo">
+                            <p>Гарантированый уход</p>
+                        </div>
+                        <div class="about__adventage-text about__text">
+                            <p>Покупая продукты Acre Care, вы можете быть уверены, что ваша обувь будет чистой на протяжении всего сезона</p>
+                        </div>
+                    </article>
+                    <article class="about__adventage-item col_narrow">
+                        <div class="about__adventage-subheading">
+                            <img class="about__adventage-icon" src="./assets/img/about/shield.svg" alt="shield-logo">
+                            <p>Безопасно</p>
+                        </div>
+                        <div class="about__adventage-text about__text">
+                            <p>Наша формула разработана таким образом, чтобы обеспечивать безопасный и эффективный уход за обувью, не нанося ей ущерба.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="about__adventage-line flex">
+                    <article class="about__adventage-item col_wide">
+                        <div class="about__adventage-subheading">
+                            <img class="about__adventage-icon" src="./assets/img/about/adventage.svg" alt="adventage-logo">
+                            <p>Преимущества</p>
+                        </div>
+                        <div class="about__adventage-text about__text">
+                            <p>Безопасен для кожи рук <br>
+                                Натуральные компоненты в составе продуктов
+                                Не содержит агрессивных химических веществ</p>
+                        </div>
+                    </article>
+                    <article class="about__adventage-item col_narrow">
+                        <div class="about__adventage-subheading">
+                            <img class="about__adventage-icon" src="./assets/img/about/available.svg" alt="rubble-logo">
+                            <p>Доступно</p>
+                        </div>
+                        <div class="about__adventage-text about__text">
+                            <p>Забота о вашей обуви не должна стоить слишком дорого, поэтому мы стремимся предоставлять нашим клиентам оптимальное соотношение цены и качества.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="products container" id="products-section">
+            <h2 class="products__heading section__heading">Наша продукция </h2>
+
+            <div class="products__list">
+                <div class="products__item">
+                    <p class="products__name accent">Cleaner</p>
+                    <p class="products__subname">Шампунь для чистки обуви 150 мл</p>
+                    <img src="./assets/img/products/1.png" alt="Cleaner Photo" class="products__img">
+                    <!-- <div class="products__picture">
+                    </div> -->
+                    <p class="products__price">₽ 450</p>
+                    <div class="products__buttons">
+                        <a href="#products__description" class="products__button btn">Купить</a>
+                        <button class="products__info-btn btn"><img src="./assets/img/products/info-icon.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="products__item">
+                    <p class="products__name accent">Foam</p>
+                    <p class="products__subname">Активная пена для чистки обуви 150 мл </p>
+                    <img src="./assets/img/products/2.png" alt="Cleaner Photo" class="products__img">
+                    <!-- <div class="products__picture">
+                    </div> -->
+                    <p class="products__price">₽ 615</p>
+                    <div class="products__buttons">
+                        <a href="#products__description" class="products__button btn">Купить</a>
+                        <button class="products__info-btn btn"><img src="./assets/img/products/info-icon.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="products__item">
+                    <p class="products__name accent">Refresh Kit</p>
+                    <p class="products__subname">Набор для чистки обуви и кроссовок</p>
+                    <img src="./assets/img/products/3.png" alt="Cleaner Photo" class="products__img">
+                    <!-- <div class="products__picture">
+                    </div> -->
+                    <p class="products__price">₽ 790</p>
+                    <div class="products__buttons">
+                        <a href="#products__description" class="products__button btn">Купить</a>
+                        <button class="products__info-btn btn"><img src="./assets/img/products/info-icon.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div id="products__description">
+                <div class="products__description products__description-foam" id="products__description-foam">
+                    <h3 class="products__description-name">Acre Care <span class="accent">Foam</span></h3>
+                    <p class="products__description-subname">Пена-очиститель для обуви  150 мл</p>
+                    <p class="products__description-text">
+                        Acre Care Foam предназначен для быстрой очистки обуви от грязи за несколько минут. В составе средства используются безопасные для кожи рук материалы. Состав средства идеально подходит для всех видов обуви. Формула средства позволяет очищать обувь из кожи, замши, текстиля, резины, нубука, хлопка, синтетических материалов. Эффективно справляется с загрязнениями.
+                    </p>
+                    <p class="products__description-compound">
+                        <span class="bold">Состав:</span> Анионные ПАВ, Неионогенные ПАВ, Эфиры кокосового масла, Вода, Консервант, Глицерин, Отдушка
+                    </p>
+                    <div class="products__order">
+                        <div class="products__odrder-buttons">
+                            <p class="products__order-text">Заказать:</p>
+                            <div class="products__order-shops products__order-shops_online">
+                                <a target="_blank" href="https://www.wildberries.ru/catalog/139669859/detail.aspx" class="products__order-img"><img class="products__order-img" src="./assets/img/products/wb.svg" alt="wildberries icon"></a>
+                                <a target="_blank" href="https://www.ozon.ru/product/universalnaya-chistyashchaya-pena-dlya-domashnego-uhoda-acre-care-818352413/?advert=d-cjp-2FEM44eCoD24QCrGEEkSz1483hE-xCX1XUi8cTYUeN4ZKBNFiKvOa0I9qCqaowKfzZKzYV-4LBmwc7YGHAP4EY73noeozKkEwY_q8a0d37YKsPkbk7aEZqDl6nj3Tde872Ytm9T50ovd4-mlP3pCmzjF3b1tk9J77jcZ0PXTr1pVAGqgkpxZepW__FRgK60b__BIgnG2rQPGca2vG6vev8CVMsOGeLa3H_j7W9uMkzQE39YDe5Rs8mxaYEqvkyPVFiL3XIq4X2RSFMv04-pEQKasY&avtc=1&avte=2&avts=1680961114&keywords=acre+care&sh=Ju4l-7DeVA" class="products__order-img"><img class="products__order-img" src="./assets/img/products/ozon.svg" alt="ozon icon"></a>
+                            </div>
+                        </div>
+                        <div class="products__odrder-buttons">
+                            <p class="products__order-text">Купить оффлайн:</p>
+                            <div class="products__order-shops">
+                                <div class="products__order-btn">
+                                    <img class="products__order-img" src="./assets/img/products/rodina.svg" alt="rodina icon">
+                                    <p class="products__order-text">г. Киров., ул. Московская 33А., Пн-Вс 11:00 - 20:00</p>
+                                </div>
+                                <div class="products__order-btn">
+                                    <img class="products__order-img" src="./assets/img/products/krai.svg" alt="rodina icon">
+                                    <p class="products__order-text">г. Киров., ул. Воровского 75 Тц ЦУМ 2эт 10:00 - 21:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__description products__description-cleaner" id="products__description-cleaner">
+                    <h3 class="products__description-name">Acre Care <span class="accent">Cleaner</span></h3>
+                    <p class="products__description-subname">Шампунь для  чистки обуви  150 мл</p>
+                    <p class="products__description-text">
+                        Шампунь для чистки обуви очищает и ухаживает за обувью без использования агрессивных химикатов и абразивов. В составе средства используются безопасные для кожи рук материалы, подходит для всех видов обуви. Состав средства идеален для кожи, замши, текстиля, резины, нубука, хлопка, синтетических материалов. Формула средства позволяет удалять грязь, пыль пятна с обуви .
+                    </p>
+                    <p class="products__description-compound">
+                        <span class="bold">Состав:</span> Вода, Анионные ПАВ, Неионогенные ПАВ, Амфотерные ПАВ, Глицерин, Консервант, Отдушка
+                    </p>
+                    <div class="products__order">
+                        <div class="products__odrder-buttons">
+                            <p class="products__order-text">Заказать:</p>
+                            <div class="products__order-shops products__order-shops_online">
+                                <a target="_blank" href="https://www.wildberries.ru/catalog/94759705/detail.aspx" class="products__order-img"><img class="products__order-img" src="./assets/img/products/wb.svg" alt="wildberries icon"></a>
+                                <a target="_blank" href="https://ozon.ru/t/590jy2V" class="products__order-img"><img class="products__order-img" src="./assets/img/products/ozon.svg" alt="ozon icon"></a>
+                            </div>
+                        </div>
+                        <div class="products__odrder-buttons">
+                            <p class="products__order-text">Купить оффлайн:</p>
+                            <div class="products__order-shops">
+                                <div class="products__order-btn">
+                                    <img class="products__order-img" src="./assets/img/products/rodina.svg" alt="rodina icon">
+                                    <p class="products__order-text">г. Киров., ул. Московская 33А., Пн-Вс 11:00 - 20:00</p>
+                                </div>
+                                <div class="products__order-btn">
+                                    <img class="products__order-img" src="./assets/img/products/krai.svg" alt="rodina icon">
+                                    <p class="products__order-text">г. Киров., ул. Воровского 75 Тц ЦУМ 2эт 10:00 - 21:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__description products__description-basic" id="products__description-basic">
+                    <h3 class="products__description-name">Acre Care <span class="accent">Refresh Kit</span></h3>
+                    <p class="products__description-subname">Набор для домашнего ухода за обувью</p>
+                    <div class="products__description-text_basic flex">
+                        <p class="products__description-basic_text">
+                            Refresh Kit - разработан специально для повседневного
+                            использования. Состав набора собрал все необходимые компоненты для того, чтобы легко справлятся с загрязнениями на
+                            вашей обуви. Шампунь эффективно очистит подошву,внешнюю
+                            часть обуви, шнурки и стельку. Мягкая щетка избавит вас от
+                            риска повреждений, салфетка из микрофибры позволит бережно
+                            удалить остатки пены и загрязнения.
+                        </p>
+                        <div class="products__description-compound_basic">
+                            <p class="bold">В состав набора входят</p>
+                            <ol class="products__description-compound-list">
+                                <li class="products__description-compound-item">Acre care <span class="accent">cleaner</span> 150 мл</li>
+                                <li class="products__description-compound-item">Acre care Refresh <span class="accent">brush</span> - универсальная щетка</li>
+                                <li class="products__description-compound-item">Плотная <span class="accent">салфетка</span> из микрофибры 30x30 см 250мг</li>
+                                <li class="products__description-compound-item">Инструкция по применению</li>
+                                <li class="products__description-compound-item">Упаковка из переработанных материалов</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="products__order">
+                        <div class="products__odrder-buttons">
+                            <p class="products__order-text">Заказать:</p>
+                            <div class="products__order-shops products__order-shops_online">
+                                <a target="_blank" href="https://www.wildberries.ru/catalog/141551609/detail.aspx" class="products__order-img"><img class="products__order-img" src="./assets/img/products/wb.svg" alt="wildberries icon"></a>
+                                <a target="_blank" href="https://www.ozon.ru/product/nabor-dlya-domashnego-uhoda-za-obuvyu-828508364/?asb=rubd5kk%252BV03i%252BnEf5F3UXAPeu09jSBuFtTKhgFJBv10B%252F%252Fc4pQeUoZ0FQUjnfOKj&asb2=yjJZACaPDv2g_-ixMUvzBKWbsrFsGFtErutfmSHSS7_QxRMoa_tn-F8Ys0Fu4jxEBNhAZHYpCjsPE3hh3sp6A8hL4lN72-Qza4sXFT-21sCIxVS0pNLUhSrwOwNPvTQuXJN901OPKYFBmmLW3x-CpAckibC4y3MgzNBvnEfrEJ0&avtc=1&avte=2&avts=1680961017&keywords=acre+care&sh=Ju4l-yfUIQ" class="products__order-img"><img class="products__order-img" src="./assets/img/products/ozon.svg" alt="ozon icon"></a>
+                            </div>
+                        </div>
+                        <div class="products__odrder-buttons">
+                            <p class="products__order-text">Купить оффлайн:</p>
+                            <div class="products__order-shops">
+                                <div class="products__order-btn">
+                                    <img class="products__order-img" src="./assets/img/products/rodina.svg" alt="rodina icon">
+                                    <p class="products__order-text">г. Киров., ул. Московская 33А., Пн-Вс 11:00 - 20:00</p>
+                                </div>
+                                <div class="products__order-btn">
+                                    <img class="products__order-img" src="./assets/img/products/krai.svg" alt="rodina icon">
+                                    <p class="products__order-text">г. Киров., ул. Воровского 75 Тц ЦУМ 2эт 10:00 - 21:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cleaning container" id="cleaning-section">
+            <div class="cleaning__wrapper">
+                <div class="cleaning__content">
+                    <div class="cleaning__headings">
+                        <h2 class="section__heading">Сникерклининг</h2>
+                        <p class="cleaning__text">
+                            Клиниг сервис Acre радует жителей Кирова с 2022 года. Наша главная задача - удивить клиента и подарить эмоции, вернуть  в  момент покупки. Мы предоставляем бесплатный забор и доставку обуви, чтобы сделать наш сервис удобным и доступным. 
+                            Разработали единый прайс на чистку обуви, чтобы наши услуги были доступны для всех. Выбирая Acre, вы получите не только качественный сервис, но и незабываемые эмоции от нашего сервиса. Оставьте заявку и убедитесь в этом сами!
+                        </p>
+                    </div>
+                    <div class="cleaning__footer">
+                        <div class="cleaning__links">
+                            <a class="cleaning__links-item btn" href="https://t.me/acrecarebot" target="_blank">Вызвать курьера</a>
+                        </div>
+                        <p class="cleaning__annotation">*Услуга доступна только для жителей Кирова / Кировской области </p>
+                    </div>
+                </div>  
+                <div class="slider">
+                    <div class="slider__track-container">
+                        <div class="slider__buttons slider__buttons_left">
+                            <button class="slider__btn slider__btn_left slider__arrow_left"></button>
+                        </div>
+                        <ul class="slider__track" id="sliderTrack">
+                            <li class="slider__item">
+                                <div class="cleaning__card background-slide">
+                                    <div class="cleaning__card-circle cleaning__card-circle_top"></div>
+                                    <img class="cleaning__card-img cleaning__card-img_top" src="./assets/img/cleaning/InfiniteCarousel/1.png" alt="dirty-shoe">
+                                    <div class="cleaning__card_after">
+                                        <div class="cleaning__card-circle cleaning__card-circle_bottom"></div>
+                                        <img class="cleaning__card-img cleaning__card-img_bottom" src="./assets/img/cleaning/InfiniteCarousel/2.png" alt="clean-shoe">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider__item">
+                                <div class="cleaning__card background-slide">
+                                    <div class="cleaning__card-circle cleaning__card-circle_top"></div>
+                                    <img class="cleaning__card-img cleaning__card-img_top" src="./assets/img/cleaning/InfiniteCarousel/3.png" alt="dirty-shoe">
+                                    <div class="cleaning__card_after">
+                                        <div class="cleaning__card-circle cleaning__card-circle_bottom"></div>
+                                        <img class="cleaning__card-img cleaning__card-img_bottom" src="./assets/img/cleaning/InfiniteCarousel/4.png" alt="clean-shoe">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider__item">
+                                <div class="cleaning__card background-slide">
+                                    <div class="cleaning__card-circle cleaning__card-circle_top"></div>
+                                    <img class="cleaning__card-img cleaning__card-img_top" src="./assets/img/cleaning/InfiniteCarousel/5.png" alt="dirty-shoe">
+                                    <div class="cleaning__card_after">
+                                        <div class="cleaning__card-circle cleaning__card-circle_bottom"></div>
+                                        <img class="cleaning__card-img cleaning__card-img_bottom" src="./assets/img/cleaning/InfiniteCarousel/6.png" alt="clean-shoe">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider__item">
+                                <div class="cleaning__card background-slide">
+                                    <div class="cleaning__card-circle cleaning__card-circle_top"></div>
+                                    <img class="cleaning__card-img cleaning__card-img_top" src="./assets/img/cleaning/InfiniteCarousel/7.png" alt="dirty-shoe">
+                                    <div class="cleaning__card_after">
+                                        <div class="cleaning__card-circle cleaning__card-circle_bottom"></div>
+                                        <img class="cleaning__card-img cleaning__card-img_bottom" src="./assets/img/cleaning/InfiniteCarousel/8.png" alt="clean-shoe">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider__item">
+                                <div class="cleaning__card background-slide">
+                                    <div class="cleaning__card-circle cleaning__card-circle_top"></div>
+                                    <img class="cleaning__card-img cleaning__card-img_top" src="./assets/img/cleaning/InfiniteCarousel/9.png" alt="dirty-shoe">
+                                    <div class="cleaning__card_after">
+                                        <div class="cleaning__card-circle cleaning__card-circle_bottom"></div>
+                                        <img class="cleaning__card-img cleaning__card-img_bottom" src="./assets/img/cleaning/InfiniteCarousel/10.png" alt="clean-shoe">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="slider__buttons slider__buttons_right">
+                            <button class="slider__btn slider__btn_right slider__arrow_right"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="running__text">
+                <div class="running__text-line">
+                <div class="running__text-line-part">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                </div>    
+                <div class="running__text-line-part">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                </div>    
+                </div>
+                <div class="running__text-line">
+                <div class="running__text-line-part">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                </div>    
+                <div class="running__text-line-part">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                </div>    
+                </div>
+                <div class="running__text-line">
+                <div class="running__text-line-part">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                </div>    
+                <div class="running__text-line-part">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                </div>    
+                </div>
+                <div class="running__text-line">
+                <div class="running__text-line-part">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                </div>    
+                <div class="running__text-line-part">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                    <img class="running__text-item" src="./assets/img/logo_running.svg" alt="">
+                </div>    
+                </div>
+            </div>
+        </section>
+        <section class="buy container" id="buy-section">
+            <h2 class="buy__heading section__heading">Купить оптом</h2>
+            <h3 class="buy__subheading section__subheading">Заполните форму для сотрудничества с нами. </h3>
+            <form class="buy__form-list">
+                <input class="buy__form-item" name="name" type="text" placeholder="Имя" required>
+                <input class="buy__form-item" name="email" type="email" placeholder="E-mail" required>
+                <input class="buy__form-item" name="phone" type="tel" placeholder="Тел: +7 (999) 999-99-99" required>
+                <input class="buy__form-item" name="company" type="text" placeholder="Компания" required>
+                <input class="buy__form-item" name="message" type="text" placeholder="Сообщение" required>
+                <div class="buy__alert">
+                    
+                </div>
+                <button class="buy__form-btn btn">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+
+        <div class="footer__content">
+            <p class="footer__title">
+                FROM SNEAKERHEAD FOR ALL
+            </p>
+            <p class="footer__copyright">
+                ©2023 acre care
+            </p>
+        </div>
+    </footer>
+    <script src="./assets/js/burgerButton.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
